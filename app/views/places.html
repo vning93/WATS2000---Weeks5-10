@@ -1,0 +1,5 @@
+<h1>Here are the places that I've been!</h1>
+
+<map center="47.6097, -122.3331" zoom="2">
+	<marker ng-repeat="coordinate in coordinates" position="{{coordinate.latitude}}, {{coordinate.longitude}}" title="Places I've Visited" on-click="focusCity(coordinate)"></marker>
+</map>
