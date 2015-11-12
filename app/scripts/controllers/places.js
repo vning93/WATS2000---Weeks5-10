@@ -8,7 +8,9 @@
  * Controller of the weeks510App
  */
 angular.module('weeks510App')
-  .controller('PlacesCtrl', function ($scope) {
+  .controller('PlacesCtrl', function ($scope, $localStorage) {
+
+    $localStorage.places = [];
 
     $scope.focusCity = function(event) {
     	console.log(event);
@@ -387,4 +389,7 @@ angular.module('weeks510App')
     		"longitude": 100.0333
     	}
     ];
+
+    $localStorage.places.push($scope.coordinates);
+
   });

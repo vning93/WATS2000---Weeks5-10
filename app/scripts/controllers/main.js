@@ -8,10 +8,14 @@
  * Controller of the weeks510App
  */
 angular.module('weeks510App')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope) {
+    
+  	$scope.showMessage = false;
+
+  	$scope.buttonClicked = function() {
+  		$scope.render = {
+  			'showMessage': true
+  		};
+  	};
+
   });

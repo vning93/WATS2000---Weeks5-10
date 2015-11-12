@@ -4,7 +4,13 @@
     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
     A guide to Vince Ning's life
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/" ng-click="buttonClicked()">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div ng-messages="render">
+  <p class="bg-success text-success" ng-message="showMessage">
+        Message!
+    </p>
 </div>
 
 <div class="row marketing">
